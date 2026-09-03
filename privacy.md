@@ -52,7 +52,7 @@ No analytics, no advertising identifiers, no third-party trackers, no crash-repo
 
 ## Contact
 
-Stephen Curial · scurial@gmail.com
+Stephen Curial · gymloggerphoneapp@gmail.com
 
 ## Changes
 
