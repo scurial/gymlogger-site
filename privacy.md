@@ -6,9 +6,9 @@ description: How GymLogger handles location, Apple Health, cloud backup, and lea
 
 # GymLogger privacy policy
 
-_Last updated 2 September 2026_
+_Last updated 7 September 2026_
 
-GymLogger is a small app by Stephen Curial that notices when you are at your martial arts gym and logs the session as a workout in Apple Health. It exists because Jiu Jitsu is a contact sport: you cannot wear a watch or a fitness tracker on the mat, so those sessions never reach Apple Health on their own. GymLogger uses your phone's location instead, so your training is logged automatically without anything on your wrist. This page explains what it collects, where it goes, and how to get rid of it.
+GymLogger is an app that notices when you are at your martial arts gym and logs the session as a workout in Apple Health. It exists because Jiu Jitsu is a contact sport: you cannot wear a watch or a fitness tracker on the mat, so those sessions never reach Apple Health on their own. GymLogger uses your phone's location instead, so your training is logged automatically without anything on your wrist. This page explains what it collects, where it goes, and how to get rid of it.
 
 ## What the app does with your location
 
@@ -45,7 +45,7 @@ Sharing on leaderboards is **on by default** and can be turned off in Settings �
 
 ## Diagnostics you choose to send
 
-Settings › Diagnostics › Share diagnostics builds a file containing the app's state, permissions, your gyms, sessions and crossing log, and hands it to the iOS share sheet. Nothing is sent unless you choose a recipient. If you send it to Stephen, it is used only to work out what went wrong, and deleted once that is done.
+Settings › Diagnostics › Share diagnostics builds a file containing the app's state, permissions, your gyms, sessions and crossing log, and hands it to the iOS share sheet. Nothing is sent unless you choose a recipient. If you send it to GymLogger support, it is used only to work out what went wrong, and deleted once that is done.
 
 ## What is not collected
 
@@ -58,7 +58,7 @@ No analytics, no advertising identifiers, no third-party trackers, no crash-repo
 
 ## Contact
 
-Stephen Curial · gymloggerphoneapp@gmail.com
+gymloggerphoneapp@gmail.com
 
 ## Changes
 
