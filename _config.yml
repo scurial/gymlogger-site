@@ -1,3 +1,12 @@
 title: GymLogger
 description: Automatic Jiu Jitsu session logging for Apple Health
 theme: jekyll-theme-minimal
+url: https://scurial.github.io
+baseurl: /gymlogger-site
+defaults:
+  - scope:
+      path: privacy.md
+    values:
+      layout: privacy
+      title: GymLogger privacy policy
+      description: How GymLogger handles location, Apple Health, cloud backup, and leaderboard data.
