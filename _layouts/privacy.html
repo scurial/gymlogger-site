@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="icon" href="{{ '/app-icon.svg' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+    <meta property="og:title" content="{{ page.title | default: site.title }}">
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ '/og.jpg' | absolute_url }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ '/og.jpg' | absolute_url }}">
+  </head>
+  <body>
+    <main class="privacy-page">
+      <nav class="site-nav privacy-nav" aria-label="Privacy navigation">
+        <a class="brand" href="{{ '/' | relative_url }}">
+          <img src="{{ '/app-icon.svg' | relative_url }}" alt="">
+          <span>GymLogger</span>
+        </a>
+        <div></div>
+        <a class="nav-cta" href="{{ '/' | relative_url }}">Back home</a>
+      </nav>
+      <article class="privacy-article">
+        <span class="kicker">PRIVACY POLICY</span>
+        {{ content }}
+      </article>
+    </main>
+  </body>
+</html>

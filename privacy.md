@@ -1,3 +1,9 @@
+---
+layout: privacy
+title: GymLogger privacy policy
+description: How GymLogger handles location, Apple Health, cloud backup, and leaderboard data.
+---
+
 # GymLogger privacy policy
 
 _Last updated 2 September 2026_
