@@ -1,14 +1,8 @@
----
-layout: privacy
-title: GymLogger privacy policy
-description: How GymLogger handles location, Apple Health, cloud backup, and leaderboard data.
----
-
 # GymLogger privacy policy
 
-_Last updated 7 September 2026_
+_Last updated 19 September 2026_
 
-GymLogger is an app that notices when you are at your martial arts gym and logs the session as a workout in Apple Health. It exists because Jiu Jitsu is a contact sport: you cannot wear a watch or a fitness tracker on the mat, so those sessions never reach Apple Health on their own. GymLogger uses your phone's location instead, so your training is logged automatically without anything on your wrist. This page explains what it collects, where it goes, and how to get rid of it.
+GymLogger is a small app that notices when you are at your martial arts gym and logs the session as a workout in Apple Health. It exists because Jiu Jitsu is a contact sport: you cannot wear a watch or a fitness tracker on the mat, so those sessions never reach Apple Health on their own. GymLogger uses your phone's location instead, so your training is logged automatically without anything on your wrist. This page explains what it collects, where it goes, and how to get rid of it.
 
 ## What the app does with your location
 
@@ -32,7 +26,7 @@ Synced to your account:
 
 - **Your gyms**, as links to a shared gym catalogue, with your personal radius. The catalogue entry (name, address, coordinates) is shared with other users of the same gym; your link to it is private.
 - **Your sessions**: gym, arrival and departure times, classification, and the identifier of the Health workout.
-- **Your settings** (trim, minimum and maximum session length, default class length, calorie fallback weight).
+- **Your settings** (trim, minimum and maximum session length, default class length, usual workout intensity, weight unit, calorie fallback weight).
 - **Your profile**: a display name and whether you share on leaderboards.
 
 Never synced: your position fixes, the raw crossing log, your body weight, or anything else from Apple Health.
@@ -45,7 +39,7 @@ Sharing on leaderboards is **on by default** and can be turned off in Settings �
 
 ## Diagnostics you choose to send
 
-Settings › Diagnostics › Share diagnostics builds a file containing the app's state, permissions, your gyms, sessions and crossing log, and hands it to the iOS share sheet. Nothing is sent unless you choose a recipient. If you send it to GymLogger support, it is used only to work out what went wrong, and deleted once that is done.
+Settings › Diagnostics › Share diagnostics builds a file containing the app's state, permissions, your gyms, sessions and crossing log, and hands it to the iOS share sheet. Nothing is sent unless you choose a recipient. If you send it to the developer, it is used only to work out what went wrong, and deleted once that is done.
 
 ## What is not collected
 
