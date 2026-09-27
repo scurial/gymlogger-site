@@ -1,6 +1,6 @@
 # GymLogger privacy policy
 
-_Last updated 19 September 2026_
+_Last updated 27 September 2026_
 
 GymLogger is a small app that notices when you are at your martial arts gym and logs the session as a workout in Apple Health. It exists because Jiu Jitsu is a contact sport: you cannot wear a watch or a fitness tracker on the mat, so those sessions never reach Apple Health on their own. GymLogger uses your phone's location instead, so your training is logged automatically without anything on your wrist. This page explains what it collects, where it goes, and how to get rid of it.
 
@@ -24,18 +24,22 @@ GymLogger keeps a copy of some of your data on a server (Supabase, hosted in the
 
 Synced to your account:
 
-- **Your gyms**, as links to a shared gym catalogue, with your personal radius. The catalogue entry (name, address, coordinates) is shared with other users of the same gym; your link to it is private.
+- **Your gyms**, as links to a shared gym catalogue, with your personal radius. The catalogue entry (name, address, coordinates) is visible to every signed-in user, so people at the same gym end up on the same entry; your link to it is private.
 - **Your sessions**: gym, arrival and departure times, classification, and the identifier of the Health workout.
-- **Your settings** (trim, minimum and maximum session length, default class length, usual workout intensity, weight unit, calorie fallback weight).
+- **Your settings** (trim, minimum and maximum session length, default class length, usual workout intensity, weight unit, calorie fallback weight, your default gym and the leaderboard you last viewed).
 - **Your profile**: a display name and whether you share on leaderboards.
 
 Never synced: your position fixes, the raw crossing log, your body weight, or anything else from Apple Health.
 
-If you link Sign in with Apple, Apple sends the app your name and an email address (or a private relay address, if you choose "Hide My Email"). The name is used to pre-fill your display name once; the email is held by the authentication service as your login and is not shown to anyone.
+If you link Sign in with Apple, Apple sends the app your name and an email address (or a private relay address, if you choose "Hide My Email"). The name is used to pre-fill your display name once; the email is held by the authentication service as your login. It is not shown to other users, and GymLogger's admin tool (below) cannot read it.
 
 ## Leaderboards
 
-Sharing on leaderboards is **on by default** and can be turned off in Settings › Leaderboard. When it is on, other signed-in users who train at the same gym, city, metro area, state or country can see your **display name, session count and current streak**. They cannot see when you trained, which sessions you had, your gyms' addresses, or anything else. When it is off, you can still see the board; you just do not appear on it. Your display name defaults to "Anonymous" until you change it or link Sign in with Apple.
+Sharing on leaderboards is **on by default** and can be turned off in Settings › Leaderboard. When it is on, your **display name, session count and current streak** appear on the board of each gym you trained at, and on the boards for that gym's city, metro area, state and country. Any signed-in user can open the board for any gym or place, not only the ones they train at. On boards wider than a single gym, your row also names the gym where you trained most in the period the board covers, so someone looking through the boards can tell which gyms you have trained at. Nobody can see when you trained, which sessions you had, or anything else. When sharing is off, you can still see the boards; you just do not appear on them. Your display name defaults to "Anonymous" until you change it or link Sign in with Apple.
+
+## What the operator can see
+
+The developer uses a private admin tool, which runs only on their own computer, to maintain the shared gym catalogue and to count sign-ups and activity. For each account, by its account identifier, it shows when the account was created, whether it is anonymous or linked to Sign in with Apple, your display name and leaderboard setting, and how many gyms and sessions you have. For each gym and region it shows totals, and those include people who do not share on leaderboards. It never shows your email address or when you trained. As with any hosted service, the operator can also reach the database directly, for maintenance and to carry out deletion requests.
 
 ## Diagnostics you choose to send
 
@@ -43,12 +47,13 @@ Settings › Diagnostics › Share diagnostics builds a file containing the app'
 
 ## What is not collected
 
-No analytics, no advertising identifiers, no third-party trackers, no crash-reporting service beyond what Apple's TestFlight and App Store provide with your consent.
+No analytics SDKs, no advertising identifiers, no third-party trackers, no crash-reporting service beyond what Apple's TestFlight and App Store provide with your consent. The operator's counts of accounts and activity come from the data already synced for the features above; nothing extra is collected for them.
 
 ## Deleting your data
 
 - Deleting the app removes everything stored on the phone. Workouts already written to Apple Health remain there and can be deleted in the Health app.
 - To delete your cloud account and everything synced to it, email the address below from the device with the app installed and quote the account identifier shown in Settings › Account. It will be removed within 30 days. An in-app "Delete account" button is planned.
+- Gyms you added to the shared catalogue stay in it, no longer linked to you. A record that an account with your identifier was deleted, and when, is kept, together with when the account was created and whether it was anonymous; it does not include your email.
 
 ## Contact
 
